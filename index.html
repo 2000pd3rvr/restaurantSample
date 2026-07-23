@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta id="meta-theme-color" name="theme-color" content="#070707">
+  <!-- Same-origin /sushi_atelier_artifacts/… — FastAPI serves local files or proxies PIANDT/sushi_atelier_artifacts (HF_TOKEN on Spaces). -->
+  <link rel="icon" type="image/png" href="/sushi_atelier_artifacts/images/logo.png">
+  <link rel="apple-touch-icon" href="/sushi_atelier_artifacts/images/logo.png">
+  <script>
+    (function () {
+      try {
+        var k = "placeholder-name-theme";
+        var t = localStorage.getItem(k);
+        var th = t === "light" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", th);
+        var meta = document.getElementById("meta-theme-color");
+        if (meta) meta.setAttribute("content", th === "light" ? "#f6f3ee" : "#070707");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+  <title>Placeholder Name | Modern Sushi & Omakase · Canary Wharf, London</title>
+  <meta name="description" content="Modern sushi in Canary Wharf: omakase sets, creative rolls, carpaccio and premium sake. Long sushi bar, cosy basement for groups. Near Canary Wharf station.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1.4">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Placeholder Name home">
+        <img
+          class="brand-logo"
+          src="/sushi_atelier_artifacts/images/logo.png"
+          alt="Placeholder Name"
+          width="355"
+          height="364"
+          decoding="async">
+        <span class="brand-sr-only">Placeholder Name</span>
+      </a>
+      <nav class="nav nav-desktop" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#spotlight">Spotlight</a>
+        <a href="#menu">Menu</a>
+        <a href="#hours">Contact</a>
+        <span class="open-now-chip is-closed" data-open-now>Closed</span>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light theme" title="Theme">
+          <svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-mobile" aria-label="Open menu"></button>
+      </div>
+    </div>
+    <nav id="nav-mobile" class="nav-mobile container" data-nav-panel aria-label="Mobile primary">
+      <a href="#about">About</a>
+      <a href="#spotlight">Spotlight</a>
+      <a href="#menu">Menu</a>
+      <a href="#hours">Contact</a>
+      <span class="open-now-chip is-closed" data-open-now>Closed</span>
+      <a href="https://app.cardivo.com/giftcards/sushi_atelier" rel="noopener noreferrer" target="_blank">Purchase gift vouchers</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-media" data-hero-slideshow aria-hidden="true">
+        <video class="hero-slide is-active" autoplay muted loop playsinline preload="metadata" data-hero-video>
+          <source src="/sushi_atelier_artifacts/videos/pexels-video-8907611.mp4" type="video/mp4">
+        </video>
+        <video class="hero-slide" autoplay muted loop playsinline preload="none" data-hero-video>
+          <source src="/sushi_atelier_artifacts/videos/pexels-video-8908509.mp4" type="video/mp4">
+        </video>
+        <video class="hero-slide" autoplay muted loop playsinline preload="none" data-hero-video>
+          <source src="/sushi_atelier_artifacts/videos/pexels-video-8902000.mp4" type="video/mp4">
+        </video>
+        <video class="hero-slide" autoplay muted loop playsinline preload="none" data-hero-video>
+          <source src="/sushi_atelier_artifacts/videos/pexels-video-8901902.mp4" type="video/mp4">
+        </video>
+        <video class="hero-slide" autoplay muted loop playsinline preload="none" data-hero-video>
+          <source src="/sushi_atelier_artifacts/videos/pexels-video-8902084.mp4" type="video/mp4">
+        </video>
+        <video class="hero-slide" autoplay muted loop playsinline preload="none" data-hero-video>
+          <source src="/sushi_atelier_artifacts/videos/pexels-video-5861513.mp4" type="video/mp4">
+        </video>
+        <video class="hero-slide" autoplay muted loop playsinline preload="none" data-hero-video>
+          <source src="/sushi_atelier_artifacts/videos/pexels-video-5789849.mp4" type="video/mp4">
+        </video>
+        <video class="hero-slide" autoplay muted loop playsinline preload="none" data-hero-video>
+          <source src="/sushi_atelier_artifacts/videos/pexels-video-37279188.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <img
+          class="hero-logo"
+          src="/sushi_atelier_artifacts/images/logo.png"
+          alt="Placeholder Name"
+          width="355"
+          height="364"
+          fetchpriority="high"
+          decoding="async">
+        <div class="hero-actions">
+          <a class="btn" href="https://booking.resdiary.com/widget/Standard/SushiAtelier/1265?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3_a1dennhd9qowpg" rel="noopener noreferrer" target="_blank">Make a booking</a>
+          <a class="btn btn-outline" href="https://sushi-atelier.slerp.com/order/store/sushi-atelier-great-portland-street" rel="noopener noreferrer" target="_blank">Order</a>
+          <a class="btn btn-outline" href="https://app.cardivo.com/giftcards/sushi_atelier" rel="noopener noreferrer" target="_blank">Purchase gift vouchers</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hotel-intro">
+      <div class="container hotel-intro__content">
+        <h2 class="hotel-intro__title">A sushi bar that anchors the room.</h2>
+        <p class="hotel-intro__lead">
+          The dining room is built around a long sushi bar where you can watch chefs plate each course. Below,
+          a generous basement offers softer lighting and banquettes—ideal for bigger bookings and celebrations.
+        </p>
+        <details class="hotel-intro__details">
+          <summary>See more</summary>
+          <p>
+            Canary Wharf is the nearest tube; we sit in the heart of Canary Wharf, steps from the station and the riverside.
+            Walk-ins are welcome, but reserving a table is the safest way to secure a seat—especially on busy nights.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container section-stack">
+        <figure class="about-visual about-visual--section">
+          <div class="glide glide--ltr glide--slider glide--swipeable" data-about-glide tabindex="0" aria-label="About gallery slider">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-10311486.jpeg" alt="Sushi photo from Pexels, image 10311486" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-10562410.jpeg" alt="Sushi photo from Pexels, image 10562410" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-12026747.jpeg" alt="Sushi photo from Pexels, image 12026747" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-13233519.jpeg" alt="Sushi photo from Pexels, image 13233519" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-15299015.jpeg" alt="Sushi photo from Pexels, image 15299015" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-15913417.jpeg" alt="Sushi photo from Pexels, image 15913417" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-17584799.jpeg" alt="Sushi photo from Pexels, image 17584799" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-17894251.jpeg" alt="Sushi photo from Pexels, image 17894251" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-17894254.jpeg" alt="Sushi photo from Pexels, image 17894254" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-17894259.jpeg" alt="Sushi photo from Pexels, image 17894259" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-17894264.jpeg" alt="Sushi photo from Pexels, image 17894264" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-17894268.jpeg" alt="Sushi photo from Pexels, image 17894268" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-20570612.jpeg" alt="Sushi photo from Pexels, image 20570612" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-26627337.jpeg" alt="Sushi photo from Pexels, image 26627337" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-27898847.jpeg" alt="Sushi photo from Pexels, image 27898847" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-28291555.jpeg" alt="Sushi photo from Pexels, image 28291555" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-28460878.jpeg" alt="Sushi photo from Pexels, image 28460878" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-28992215.jpeg" alt="Sushi photo from Pexels, image 28992215" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-30146812.jpeg" alt="Sushi photo from Pexels, image 30146812" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-30910486.jpeg" alt="Sushi photo from Pexels, image 30910486" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-31280818.jpeg" alt="Sushi photo from Pexels, image 31280818" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-31299670.jpeg" alt="Sushi photo from Pexels, image 31299670" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-3147493.jpeg" alt="Sushi photo from Pexels, image 3147493" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-32879300.jpeg" alt="Sushi photo from Pexels, image 32879300" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-34620823.jpeg" alt="Sushi photo from Pexels, image 34620823" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-36317037.jpeg" alt="Sushi photo from Pexels, image 36317037" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-36317042.jpeg" alt="Sushi photo from Pexels, image 36317042" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-36627095.jpeg" alt="Sushi photo from Pexels, image 36627095" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-37260684.jpeg" alt="Sushi photo from Pexels, image 37260684" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-37260694.jpeg" alt="Sushi photo from Pexels, image 37260694" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-5654768.jpeg" alt="Sushi photo from Pexels, image 5654768" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-6025655.jpeg" alt="Sushi photo from Pexels, image 6025655" width="1920" height="1280" loading="lazy" decoding="async"></li>
+                <li class="glide__slide"><img src="/sushi_atelier_artifacts/images/pexels-photo-7719913.jpeg" alt="Sushi photo from Pexels, image 7719913" width="1920" height="1280" loading="lazy" decoding="async"></li>
+              </ul>
+            </div>
+          </div>
+        </figure>
+        <div class="about-highlights">
+          <h3 class="about-highlights__title">Highlights</h3>
+          <ul class="about-highlights__list">
+            <li>Chef-led omakase sushi sets with individual toppings</li>
+            <li>Carpaccios, dumplings, salads, and creative rolls</li>
+            <li>Premium sake, wine, draft Japanese beer, shochu, and Japanese tea</li>
+            <li>Basement dining for groups and private-style evenings</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="spotlight" class="section section-alt">
+      <div class="container section-stack">
+        <div
+          class="spotlight-carousel gallery-spotlight__shell"
+          data-spotlight-carousel
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Featured sushi photography slideshow"
+        >
+          <div class="gallery-spotlight__stage">
+            <div class="gallery-spotlight__track" tabindex="0" data-spotlight-viewport role="list">
+              <figure class="gallery-spotlight__slide is-active" role="listitem" data-spotlight-slide>
+                <video muted playsinline loop preload="metadata" aria-label="Spotlight video 4725793">
+                  <source src="/sushi_atelier_artifacts/spotlight/videos/4725793.mp4" type="video/mp4">
+                </video>
+                <figcaption class="gallery-spotlight__caption"></figcaption>
+              </figure>
+              <figure class="gallery-spotlight__slide" role="listitem" data-spotlight-slide>
+                <video muted playsinline loop preload="none" aria-label="Spotlight video 27945799">
+                  <source src="/sushi_atelier_artifacts/spotlight/videos/27945799.mp4" type="video/mp4">
+                </video>
+                <figcaption class="gallery-spotlight__caption"></figcaption>
+              </figure>
+              <figure class="gallery-spotlight__slide" role="listitem" data-spotlight-slide>
+                <video muted playsinline loop preload="none" aria-label="Spotlight video 8908652">
+                  <source src="/sushi_atelier_artifacts/spotlight/videos/8908652.mp4" type="video/mp4">
+                </video>
+                <figcaption class="gallery-spotlight__caption"></figcaption>
+              </figure>
+              <figure class="gallery-spotlight__slide" role="listitem" data-spotlight-slide>
+                <video muted playsinline loop preload="none" aria-label="Spotlight video 19742746">
+                  <source src="/sushi_atelier_artifacts/spotlight/videos/19742746.mp4" type="video/mp4">
+                </video>
+                <figcaption class="gallery-spotlight__caption"></figcaption>
+              </figure>
+              <figure class="gallery-spotlight__slide" role="listitem" data-spotlight-slide>
+                <video muted playsinline loop preload="none" aria-label="Spotlight video 31745145">
+                  <source src="/sushi_atelier_artifacts/spotlight/videos/31745145.mp4" type="video/mp4">
+                </video>
+                <figcaption class="gallery-spotlight__caption"></figcaption>
+              </figure>
+              <figure class="gallery-spotlight__slide" role="listitem" data-spotlight-slide>
+                <video muted playsinline loop preload="none" aria-label="Spotlight video 8908509">
+                  <source src="/sushi_atelier_artifacts/spotlight/videos/8908509.mp4" type="video/mp4">
+                </video>
+                <figcaption class="gallery-spotlight__caption"></figcaption>
+              </figure>
+              <figure class="gallery-spotlight__slide" role="listitem" data-spotlight-slide>
+                <video muted playsinline loop preload="none" aria-label="Spotlight video 3298011">
+                  <source src="/sushi_atelier_artifacts/spotlight/videos/3298011.mp4" type="video/mp4">
+                </video>
+                <figcaption class="gallery-spotlight__caption"></figcaption>
+              </figure>
+              <figure class="gallery-spotlight__slide" role="listitem" data-spotlight-slide>
+                <video muted playsinline loop preload="none" aria-label="Spotlight video 8472595">
+                  <source src="/sushi_atelier_artifacts/spotlight/videos/8472595.mp4" type="video/mp4">
+                </video>
+                <figcaption class="gallery-spotlight__caption"></figcaption>
+              </figure>
+              <figure class="gallery-spotlight__slide" role="listitem" data-spotlight-slide>
+                <video muted playsinline loop preload="none" aria-label="Spotlight video 4725795">
+                  <source src="/sushi_atelier_artifacts/spotlight/videos/4725795.mp4" type="video/mp4">
+                </video>
+                <figcaption class="gallery-spotlight__caption"></figcaption>
+              </figure>
+            </div>
+            <button
+              type="button"
+              class="gallery-spotlight__arrow gallery-spotlight__arrow--prev"
+              data-spotlight-prev
+              aria-label="Previous slide"
+            >
+              <span class="gallery-spotlight__arrow-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="gallery-spotlight__arrow gallery-spotlight__arrow--next"
+              data-spotlight-next
+              aria-label="Next slide"
+            >
+              <span class="gallery-spotlight__arrow-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div id="menu" class="tabs spotlight-menu-tabs" data-tabs>
+          <div class="tab-list" role="tablist">
+            <button type="button" class="tab-btn is-active" data-tab="food" role="tab" aria-selected="true">Food</button>
+            <button type="button" class="tab-btn" data-tab="lunch" role="tab" aria-selected="false">Lunch</button>
+            <button type="button" class="tab-btn" data-tab="drinks" role="tab" aria-selected="false">Drinks</button>
+          </div>
+
+          <div class="tab-panel" data-panel="food" role="tabpanel">
+            <div class="menu-columns">
+              <section class="menu-col" aria-label="Nibbles and starters">
+                <h3 class="menu-heading">Nibbles</h3>
+                <ul class="menu-list">
+                  <li><span class="dish">Edamame <em>shichimi or yuzu salt</em></span><span class="amt">£4.60</span></li>
+                  <li><span class="dish">Assorted pickles <em>sweet miso &amp; yoghurt</em></span><span class="amt">£8</span></li>
+                  <li><span class="dish">Shiitake kinpira</span><span class="amt">£8</span></li>
+                  <li><span class="dish">Snowcrab &amp; courgette bites</span><span class="amt">£16</span></li>
+                </ul>
+                <h3 class="menu-heading">Starters</h3>
+                <ul class="menu-list">
+                  <li><span class="dish">Sea bass ceviche</span><span class="amt">£15.50</span></li>
+                  <li><span class="dish">Mixed tuna tartare</span><span class="amt">£19</span></li>
+                  <li><span class="dish">Scallop and asparagus</span><span class="amt">£19.50</span></li>
+                  <li><span class="dish">Tuna tataki</span><span class="amt">£30</span></li>
+                </ul>
+              </section>
+
+              <section class="menu-col" aria-label="Salads and carpaccio">
+                <h3 class="menu-heading">Salads</h3>
+                <ul class="menu-list">
+                  <li><span class="dish">Green salad</span><span class="amt">£10</span></li>
+                  <li><span class="dish">Chard and parmesan salad</span><span class="amt">£12</span></li>
+                  <li><span class="dish">3 kind seaweed</span><span class="amt">£12.50</span></li>
+                  <li><span class="dish">White fish salad</span><span class="amt">£15</span></li>
+                </ul>
+
+                <h3 class="menu-heading">Carpaccio</h3>
+                <ul class="menu-list compact-menu">
+                  <li><span class="dish">Butterfish carpaccio</span><span class="amt">£25</span></li>
+                  <li><span class="dish">Yellowtail carpaccio</span><span class="amt">£21</span></li>
+                  <li><span class="dish">Smoked toro carpaccio</span><span class="amt">£28</span></li>
+                  <li><span class="dish">Wagyu carpaccio</span><span class="amt">£32</span></li>
+                </ul>
+              </section>
+
+              <section class="menu-col" aria-label="Hot dishes and sets">
+                <h3 class="menu-heading">Hot dishes</h3>
+                <ul class="menu-list">
+                  <li><span class="dish">Miso soup</span><span class="amt">£4.60</span></li>
+                  <li><span class="dish">Pan-fried tofu &amp; mixed vegetables</span><span class="amt">£15.50</span></li>
+                  <li><span class="dish">Duck gyoza</span><span class="amt">£15</span></li>
+                  <li><span class="dish">A5 wagyu steak</span><span class="amt">£60</span></li>
+                </ul>
+
+                <h3 class="menu-heading">Sushi sets &amp; on rice</h3>
+                <ul class="menu-list">
+                  <li><span class="dish">Salmon set</span><span class="amt">£28</span></li>
+                  <li><span class="dish">Yellowtail set</span><span class="amt">£33</span></li>
+                  <li><span class="dish">Mixed sushi set</span><span class="amt">£29</span></li>
+                  <li><span class="dish">Deluxe set</span><span class="amt">£34</span></li>
+                  <li><span class="dish">Oyako don</span><span class="amt">£33</span></li>
+                  <li><span class="dish">Unaju</span><span class="amt">£35</span></li>
+                  <li><span class="dish">Chirashi sushi</span><span class="amt">£44</span></li>
+                </ul>
+              </section>
+
+              <section class="menu-col" aria-label="Rolls and a la carte">
+                <h3 class="menu-heading">Omakase &amp; rolls</h3>
+                <p class="menu-note">Omakase sashimi: 3 / 6 / 9 kinds. Omakase sushi: 6 / 9 / 12 / 15 pcs.</p>
+                <ul class="menu-list">
+                  <li><span class="dish">Salmon avocado roll</span><span class="amt">£12</span></li>
+                  <li><span class="dish">Spicy salmon/yellowtail/tuna</span><span class="amt">£14</span></li>
+                  <li><span class="dish">Classic yellowtail roll</span><span class="amt">£14</span></li>
+                  <li><span class="dish">California</span><span class="amt">£16</span></li>
+                  <li><span class="dish">Aburi toro truffle</span><span class="amt">£19</span></li>
+                  <li><span class="dish">Eel and avocado truffle roll</span><span class="amt">£18</span></li>
+                </ul>
+
+                <h3 class="menu-heading">À la carte sushi &amp; sashimi</h3>
+                <p class="menu-note">Includes salmon, tuna, otoro, yellowtail, sea bass, sea bream, turbot, butterfish, eel, squid, shrimp, scallop, ikura, tamago, inari and seasonal market fish.</p>
+                <ul class="menu-list compact-menu">
+                  <li><span class="dish">Nigiri</span><span class="amt">from £3.10</span></li>
+                  <li><span class="dish">Sashimi (3 pcs)</span><span class="amt">from £8.40</span></li>
+                  <li><span class="dish">Sashimi (5 pcs)</span><span class="amt">from £13.60</span></li>
+                  <li><span class="dish">Sea urchin / wagyu</span><span class="amt">Market</span></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="lunch" role="tabpanel" hidden>
+            <p class="menu-note">Lunch sets include miso soup and side salad (complimentary miso refills where offered).</p>
+            <ul class="menu-list">
+              <li><span class="dish">Atelier bento <em>2 sashimi, 3 nigiri, 4 maki, pickles, starter</em></span><span class="amt">£29</span></li>
+              <li><span class="dish">Omakase sushi set · 10 pcs</span><span class="amt">£37</span></li>
+              <li><span class="dish">6 / 9 kind sashimi set <em>with rice</em></span><span class="amt">£35 / £44</span></li>
+              <li><span class="dish">Salmon set</span><span class="amt">£26</span></li>
+              <li><span class="dish">Mixed sushi set</span><span class="amt">£28</span></li>
+              <li><span class="dish">Veg sushi set</span><span class="amt">£24</span></li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" data-panel="drinks" role="tabpanel" hidden>
+            <div class="menu-columns">
+              <section class="menu-col" aria-label="Wine selection">
+                <h3 class="menu-heading">Wine</h3>
+                <ul class="menu-list">
+                  <li><span class="dish">White / red / rose by glass</span><span class="amt">from £8</span></li>
+                  <li><span class="dish">Sparkling by glass</span><span class="amt">from £11</span></li>
+                  <li><span class="dish">Bottle selections</span><span class="amt">£33-£90</span></li>
+                  <li><span class="dish">Champagne Francoise Monay Brut</span><span class="amt">£80</span></li>
+                </ul>
+              </section>
+
+              <section class="menu-col" aria-label="Sake and spirits">
+                <h3 class="menu-heading">Sake</h3>
+                <ul class="menu-list">
+                  <li><span class="dish">Sake flight (3 × 50ml)</span><span class="amt">£18</span></li>
+                  <li><span class="dish">Bright &amp; aromatic / easy-drinking / rich styles</span><span class="amt">from £10.50</span></li>
+                  <li><span class="dish">Fruit-infused umeshu / yuzushu</span><span class="amt">from £14.50</span></li>
+                  <li><span class="dish">Bottle sake range</span><span class="amt">up to £121.20</span></li>
+                </ul>
+              </section>
+
+              <section class="menu-col" aria-label="Spirits and shochu">
+                <h3 class="menu-heading">Spirits &amp; shochu</h3>
+                <ul class="menu-list">
+                  <li><span class="dish">Vodka / gin / tequila</span><span class="amt">from £7</span></li>
+                  <li><span class="dish">Japanese whisky 50ml</span><span class="amt">from £13</span></li>
+                  <li><span class="dish">Shochu (sweet potato/barley)</span><span class="amt">from £6</span></li>
+                </ul>
+              </section>
+
+              <section class="menu-col" aria-label="Beer and non alcoholic">
+                <h3 class="menu-heading">Beer &amp; non-alcoholic</h3>
+                <ul class="menu-list">
+                  <li><span class="dish">Draft Japanese beer (pint)</span><span class="amt">£7</span></li>
+                  <li><span class="dish">Asahi / Kirin / Sapporo 330ml</span><span class="amt">£5.80</span></li>
+                  <li><span class="dish">Kombucha drinks</span><span class="amt">£4.50</span></li>
+                  <li><span class="dish">Tea (sencha, hojicha, genmaicha, jasmine)</span><span class="amt">from £3</span></li>
+                  <li><span class="dish">Coffee (Pact)</span><span class="amt">from £3.50</span></li>
+                  <li><span class="dish">Soft drinks, juice, mixers, water</span><span class="amt">from £2.50</span></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section menu-intro">
+      <div class="container menu-intro__content">
+        <h2 class="menu-intro__title">You are in for a treat of your life</h2>
+        <p class="menu-intro__lead">
+          Our skilled sushi chefs serve modern sushi. Think nigiri with toppings like ponzu jelly and rolls filled with yellowtail and truffle mayonnaise.
+          The menu is a showcase of our chef’s creativity with imaginative dishes and exciting flavour combinations. As well as sushi you’ll find
+          carpaccios, steamed dumplings, salads and cervices. The drinks list includes premium sake and wine, draft Japanese beer, shochu and Japanese tea.
+        </p>
+        <details class="menu-intro__details">
+          <summary>See more</summary>
+          <p>
+            The space inside the restaurant is dominated by a long sushi bar at which you can watch the chefs working away on your food.
+            There is also a sizeable basement with cosy lighting and banquettes, great for larger bookings and private parties.
+          </p>
+        </details>
+      </div>
+    </section>
+
+
+    <section id="hours" class="section section-dark booking-hours">
+      <div class="container booking-hours__layout">
+        <article class="booking-hours__col booking-hours__hours" aria-label="Hours">
+          <p class="eyebrow">Hours</p>
+          <table class="hours-table hours-table--full">
+            <tbody>
+              <tr><td>Sun &amp; Mon</td><td>Closed</td></tr>
+              <tr><td>Tue</td><td>12–3 · 5:30–10 <span class="sub">last order</span></td></tr>
+              <tr><td>Wed</td><td>12–3 · 5:30–10</td></tr>
+              <tr><td>Thu</td><td>12–3 · 5:30–10</td></tr>
+              <tr><td>Fri</td><td>12–3 · 5:50–10</td></tr>
+              <tr><td>Sat</td><td>12–10</td></tr>
+            </tbody>
+          </table>
+          <p class="map-note">
+            Nearest tube: <strong>Canary Wharf</strong>. In the heart of Canary Wharf, close to the riverside.
+          </p>
+        </article>
+        <article id="booking" class="booking-hours__col booking-hours__booking" aria-label="Booking">
+          <div class="booking-contact-wrap">
+            <div class="map-embed" aria-label="Map showing Placeholder Name location">
+              <iframe
+                title="Placeholder Name on Google Maps"
+                src="https://www.google.com/maps?q=Canary+Wharf+London+E14&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <p class="contact-social contact-social--vertical" aria-label="Contact links">
+              <a href="tel:02076364455" aria-label="Call Placeholder Name">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6.1 6.1l1.6-1.2a2 2 0 0 1 2.1-.4c.8.3 1.6.5 2.5.6A2 2 0 0 1 22 16.9z"/>
+                </svg>
+              </a>
+              <a href="https://api.whatsapp.com/send/?phone=447383433093&text&type=phone_number&app_absent=0&utm_source=ig" rel="noopener noreferrer" target="_blank" aria-label="WhatsApp Placeholder Name">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5.1A8.5 8.5 0 1 1 21 11.5z"/>
+                  <path d="M8.2 9.2c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .6.4l.5 1.2c.1.2.1.4 0 .6l-.4.5c-.1.1-.2.2-.1.4.2.5.6 1 1 1.4.4.4.9.8 1.4 1 .2.1.3 0 .4-.1l.5-.4c.2-.1.4-.1.6 0l1.2.5c.4.2.4.4.4.6v.5c0 .2 0 .4-.4.6-.4.2-1 .4-1.6.3-.8-.1-1.8-.5-2.9-1.4-1.1-.9-1.9-1.9-2.2-2.8-.2-.7-.1-1.3.1-1.6z"/>
+                </svg>
+              </a>
+              <a href="mailto:hello@sushiatelier.com" aria-label="Email Placeholder Name">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+                  <path d="M22 6l-10 7L2 6"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/sushiatelierlondon/" rel="noopener noreferrer" target="_blank" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37a4 4 0 1 1-2.37-3.24 4 4 0 0 1 2.37 3.24z"/>
+                  <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+                </svg>
+              </a>
+            </p>
+          </div>
+        </article>
+        <p class="booking-hours__quote" aria-live="polite">
+          <span class="booking-hours__quote-text" data-hours-quote>
+            “Simple and to the point, this no-frills favourite in Fitzrovia has a modern take on sushi.”
+          </span>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <p class="footer-copy">&copy; <span id="year"></span> Placeholder Name</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js?v=1.4" defer></script>
+</body>
+</html>
